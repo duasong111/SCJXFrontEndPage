@@ -1,0 +1,7 @@
+<!--pages/functions/index.wxml-->
+
+<l-button type="default">默认按钮</l-button>
+<l-button type="default">default</l-button>
+<l-button type="error">error</l-button>
+<l-button type="success">success</l-button>
+<l-button type="warning">warning</l-button>

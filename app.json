@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/me/index",
+    "pages/index/index",
+    "pages/functions/index",
+    "pages/homePage/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测试代码",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/functions/index",
+        "text": "功能页",
+        "iconPath": "/Image/首页.png",
+        "selectedIconPath": "/Image/首页 (1).png" 
+    },
+
+    {
+        "pagePath": "pages/homePage/index",
+        "text": "大厅",
+        "iconPath": "/Image/坦克.png",
+        "selectedIconPath": "/Image/飞机.png"
+    },
+    {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "/Image/我的.png",
+        "selectedIconPath": "/Image/飞机.png"
+    }
+]},
+  "style": "v2",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
