@@ -1,13 +1,13 @@
-// pages/me/index.js
+// pages/me/me.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    avatarUrl: '/Image/坦克.png',
+    username: 'John Doe'
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

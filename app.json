@@ -8,20 +8,20 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "测试代码",
+    
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "list": [{
         "pagePath": "pages/functions/index",
-        "text": "功能页",
+        "text": "领域圈",
         "iconPath": "/Image/首页.png",
         "selectedIconPath": "/Image/首页 (1).png" 
     },
 
     {
         "pagePath": "pages/homePage/index",
-        "text": "大厅",
+        "text": "主页",
         "iconPath": "/Image/坦克.png",
         "selectedIconPath": "/Image/飞机.png"
     },
@@ -32,7 +32,7 @@
         "selectedIconPath": "/Image/飞机.png"
     }
 ]},
-  "style": "v2",
+
   "rendererOptions": {
     "skyline": {
       "defaultDisplayBlock": true,

@@ -1,1 +1,172 @@
-/* pages/homePage/index.wxss */
+/*轮播图大小设置*/
+/* .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+
+.l-icon-huaxian:before {
+  content: "\e605";
+}
+
+.l-icon-hhh:before {
+  content: "\e606";
+}
+
+
+.showNotice{
+  width: 90%;
+ 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+  align-items: center; */
+}
+
+/* 这个是显示的是格言 */
+.geyan {
+    width: 90%;
+
+}
+
+
+/* 对于大标题的设置 */
+.title {
+    /* display: flex;
+	justify-content: flex-start; */
+    color: #030303;
+    margin: 10rpx;
+    font-size: 50rpx;
+}
+
+/* 对于格言的设置 */
+.phrase {
+    margin: 10rpx;
+    color: rgb(204, 194, 194);
+    font-size: 25rpx;
+}
+
+/* 首页面展示的一个框框 */
+.box {
+    width: 90%;
+    height: 300rpx;
+    border-radius: 20rpx;
+    border: 5rpx red solid;
+
+    overflow: hidden;
+    background-color: #f5f5f5;
+
+}
+
+/* 展示出新闻框内部的东西 */
+.box-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 250, 251);
+}
+/* 展示不对称的框框 */
+.box-bottom{
+    height: 250rpx;
+    width: 90%;
+    border-radius: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 3%; */
+    padding: 1.5%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* 人员详情展示 */
+.left-box{
+   
+   height: 90%;
+   width: 40%;
+   border-radius: 20px;
+   background-color: #f0945d;
+    
+}
+/* 展示团队的组成 */
+.showFont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* 所获奖项 */
+.right-box{
+    height: 90%;
+    width: 56%;
+    border-radius: 20px;
+    background-color: #55bb8a;
+    /* margin-right: 5%; */
+}
+image{
+  width: 30%;
+  
+}
+.showNews{
+  width: 100%;
+  height: 40%;
+}
+/* 用做展示切换的页面设置 */
+.tab {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  padding: 5rpx 0;
+  margin: -3% 0 0 -5%; /* 上 右 下 左 */
+}
+
+.topTabSwiper {
+  /* border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;  */
+   zoom: 1;
+   /* background-color: dodgerblue; */
+   /* border-radius: 18rpx; */
+}
+ 
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ 
+/* 这个是给选中的来进行色彩化的渲染 */
+/* 这个是对那两个选项的渲染 */
+.tabBorer {
+  position: relative;
+  display: inline-block;
+  color: rgb(24, 25, 26);
+  font-weight: 500;
+  font-size:38rpx;
+  color: #3683d6;
+  font-family: Cambria, Cochin, Georgia, Times, ‘Times New Roman’, serif;
+  margin-bottom: 18rpx;
+}
+
+.tabBorer::after {
+  content: "\e606";
+  font-family: "iconfont"; /* 假设你已引入相应的字体库 */
+  font-size: 32px;
+  color: rgb(82, 144, 214);
+  position: absolute;
+  bottom: -35rpx; /* 调整图标相对于文本的垂直位置 */
+  left: 0; /* 调整图标的水平位置 */
+  margin-left: 95rpx;
+}
+.swiper_con {
+  width: 100%;
+  padding: 15rpx 0;
+  background-color: rgb(255, 255, 255);
+}
+
+

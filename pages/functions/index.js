@@ -1,66 +1,39 @@
-// pages/functions/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+      navLeftItems:"",
+      navRightItems: "",
+      curNav: 1,
+      curIndex: 0
+  },
+  onLoad: function() {
+      // 加载的使用进行网络访问，把需要的数据设置到data数据对象
+      var that = this        
+      wx.request({
+          url: 'http://127.0.0.1:8000/inform/InformProject/',
+          method: 'GET',
+          data: {},
+          header: {
+              'Accept': 'application/json'
+          },
+          success: function(res) {
 
+              console.log("输出选择的数据", res.data.data.navLeftItems)
+              that.setData({
+                  navLeftItems: res.data.data.navLeftItems,
+                  navRightItems: res.data.data.navRightItems
+              })
+          }
+      })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  //事件处理函数--就是点击之后相对应的去进行展示
+  switchRightTab: function(e) {
+      let id = e.target.dataset.id,  
+      index = parseInt(e.target.dataset.index);
+      this.setData({
+          curNav: id,
+          curIndex: index
+      })
   }
+
 })

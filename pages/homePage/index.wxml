@@ -1,2 +1,66 @@
-<!--pages/homePage/index.wxml-->
-<text>pages/homePage/index.wxml</text>
+
+<!-- <l-notice-bar show="{{true}}"  type="roll" speed="2000">我是通告栏</l-notice-bar> -->
+<view class="container">
+ 
+  <view class="geyan">
+
+    <view class="title">{{title}}</view>
+    <view class="phrase">{{phrase}}</view>
+
+  </view>
+
+  <view class="box">
+   
+  </view>
+  <!-- 展示的则是下边俩不对称的框 -->
+  <view  class="box-bottom">
+    <view bindtap="personnelDetails" class="left-box">
+    <!-- 在这个里边去进行连接至人员简介 -->
+    
+    <view class="showFont">团队组成(附着图片)</view>
+
+
+    </view>
+    <view bindtap="awardPresentation" class="right-box">
+      <view class="showFont">获奖展示(图片)</view>
+    
+    </view>
+  </view>
+
+  <!-- 展示工作室的进行新闻 -->
+  <view class="showNews">
+
+    <view class='topTabSwiper'>
+      <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>新闻</view>
+      <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>比赛通知</view>
+    </view>
+    <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <view wx:for="{{[1, 2, 3]}}" wx:key="index" class='swiper_con'>
+          <l-card type="primary" plaintext="{{true}}" title="🌰 标题">
+            <view class="content">
+             这个将是去展示工作室的一些信息也可以说是展示工作室的部分的新闻吧。
+            </view>
+          </l-card>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>
+        <!-- 展示比赛的有关信息 -->
+        <view wx:for="{{[1, 2]}}" wx:key="index" class='swiper_con'>
+          <l-card type="primary" plaintext="{{true}}" title="📢 比赛通知">
+            <view class="content">
+              关于举办“2024年（第17届）中国大学生计算机设计大赛”的通知
+              2024-1-1
+            </view>
+          </l-card>
+        </view>
+        
+        </view>
+      </swiper-item>
+    </swiper>
+
+  </view>
+
+
+</view>

@@ -1,7 +1,45 @@
-<!--pages/functions/index.wxml-->
+<view class="container">
 
-<l-button type="default">默认按钮</l-button>
-<l-button type="default">default</l-button>
-<l-button type="error">error</l-button>
-<l-button type="success">success</l-button>
-<l-button type="warning">warning</l-button>
+  <!--左侧栏-->
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}">
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.data.title}}</view>
+    </block>
+  </view>
+  <!--右侧栏-->
+  <view class="nav_right">
+    <view wx:if="{{navRightItems[curIndex][0]}}">
+      <block wx:for="{{navRightItems[curIndex]}}">
+        <view class="nav_right_items">
+          <view>
+              
+         
+            <block wx:if="{{item.logo}}">
+              <image src="{{item.logo}}"></image>
+            </block>
+            <block wx:else>
+              <!-- 这里展示的是备用图片哈 -->
+              <!-- <image src="http://temp.im/50x30"></image> -->
+            </block>
+          </view>
+          <!--如果有文字，就用文字；无文字就用其他-->
+          <view wx:if="{{item.name}}">
+            <text>{{item.name}}</text>
+          </view>
+          <view wx:else>
+            <text>{{item.memo}}</text>
+          </view>
+          <!-- 展示开发人员的信息 -->
+          <!-- <view>
+            <block wx:for="{{item.team_composition}}" wx:key="index">
+              <view>: {{item.name}}</view>
+              <view>: {{item.role}}</view>
+            </block>
+          </view> -->
+        </view>
+      </block>
+    </view>
+    <!--如果无数据，则显示数据-->
+    <view wx:else>暂无数据</view>
+  </view>
+</view>
