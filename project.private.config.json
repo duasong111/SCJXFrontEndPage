@@ -9,8 +9,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "展示工作室的领域",
-          "pathName": "pages/functions/index",
+          "name": "主页面",
+          "pathName": "pages/homePage/index",
           "query": "",
           "launchMode": "default",
           "scene": null

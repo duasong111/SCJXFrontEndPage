@@ -1,0 +1,64 @@
+
+
+.l-icon-huaxian:before {
+  content: "\e605";
+}
+.l-icon-shijian:before {
+  content: "\e614";
+}
+
+.l-icon-hhh:before {
+  content: "\e606";
+}
+
+
+.showNotice{
+  width: 90%;
+ 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+/* 对bing壁纸的设置 */
+.carouselChart {
+  width: 95%;
+  height: 400rpx;
+  margin: 0 auto;
+  border-radius: 8rpx;
+  display: flex;
+  position: relative;
+}
+swiper{
+  width: 100%;
+  height: calc(100vw*442/810);
+}
+.carouselChart image{
+border-radius: 20rpx;
+  width: 97%;
+  height: 380rpx;
+  box-shadow: 0 0.1px 1px rgba(0, 0, 0, 0.3);
+}
+/* 将字显示在图片上 */
+.carouselChart .content {
+  position: absolute;
+  bottom: 18px;
+  left: 4%;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* 
+对轮播图的页面的设计 */
+

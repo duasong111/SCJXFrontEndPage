@@ -1,13 +1,10 @@
-/*轮播图大小设置*/
-/* .container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} */
 
 
 .l-icon-huaxian:before {
   content: "\e605";
+}
+.l-icon-shijian:before {
+  content: "\e614";
 }
 
 .l-icon-hhh:before {
@@ -27,28 +24,6 @@
   align-items: center; */
 }
 
-/* 这个是显示的是格言 */
-.geyan {
-    width: 90%;
-
-}
-
-
-/* 对于大标题的设置 */
-.title {
-    /* display: flex;
-	justify-content: flex-start; */
-    color: #030303;
-    margin: 10rpx;
-    font-size: 50rpx;
-}
-
-/* 对于格言的设置 */
-.phrase {
-    margin: 10rpx;
-    color: rgb(204, 194, 194);
-    font-size: 25rpx;
-}
 
 /* 首页面展示的一个框框 */
 .box {
@@ -59,8 +34,41 @@
 
     overflow: hidden;
     background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+/* 轮播图 */
+.carouselChart {
+  width: 95%;
+  height: 400rpx;
+  margin: 0 auto;
+  border-radius: 8rpx;
+  display: flex;
+  position: relative;
+}
+swiper{
+  width: 100%;
+  height: calc(100vw*442/810);
+}
+.carouselChart image{
+border-radius: 20rpx;
+  width: 97%;
+  height: 380rpx;
+  box-shadow: 0 0.1px 1px rgba(0, 0, 0, 0.3);
+}
+/* 将字显示在图片上 */
+.carouselChart .content {
+  position: absolute;
+  bottom: 18px;
+  left: 4%;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+
 
 /* 展示出新闻框内部的东西 */
 .box-inner {
@@ -169,4 +177,28 @@ image{
   background-color: rgb(255, 255, 255);
 }
 
-
+/* 比赛通知来进行设置 */
+.card_time{
+    /* margin-right: 30%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: 70%;
+    /* margin: 5rpx; */
+		margin-top: 10rpx;
+		color: #93b5cf;
+}
+/* 引入时间的图标 */
+.time {
+  content: "\e606";
+  font-family: "iconfont"; /* 假设你已引入相应的字体库 */
+  font-size: 32px;
+  color: rgb(82, 144, 214);
+  
+}
+.icon {
+  font-family: "iconfont"; /* 根据实际字体库名称调整 */
+  font-size: 32px;
+  color: rgb(82, 144, 214);
+  margin-right: 5px; /* 调整图标与文本之间的间距 */
+}

@@ -1,5 +1,27 @@
 page{
-  background: #f5f5f5;
+  background: #ffffff;
+}
+/* 添加图标 */
+.l-icon-web:before {
+  content: "\e608";
+}
+
+.l-icon-python:before {
+  content: "\e609";
+}
+
+.l-icon-java:before {
+  content: "\e60a";
+}
+
+.l-icon-unity:before {
+  content: "\e60d";
+}
+
+/* 搜索框的设置 */
+.searchbar{
+  width: 100%;
+  height: 60rpx;
 }
 /*总体主盒子*/
 .container {
@@ -17,26 +39,32 @@ page{
   width: 25%;
   height: 100%;
   /*主盒子设置背景色为灰色*/
-  background: #f5f5f5;
+  background: #F7F7F7;
   text-align: center;
+ 
+
 }
 /*左侧栏list的item*/
 .nav_left .nav_left_items{
-  /*每个高30px*/
-  height: 45px;
+  
+  height: 50px;
   /*垂直居中*/
-  line-height: 45px;
+  line-height: 48px;
   /*再设上下padding增加高度，总高42px*/
   padding: 6px 0;
   /*只设下边线*/
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #f5f5f5;
   /*文字14px*/
-  font-size: 20px;
+  font-size: 17px;
+  color: #808080;
+  box-shadow: 0 2px 4px rgba(168, 162, 162, 0.2);
 }
 /*左侧栏list的item被选中时*/
 .nav_left .nav_left_items.active{
   /*背景色变成白色*/
-  background: rgb(214, 159, 159);
+  background: #FFFFFF;
+  color: #6B66DE;
+  border-left: 4px solid rgb(107,102,222);
 }
  
 /*右侧栏主盒子*/
@@ -52,28 +80,23 @@ page{
   padding: 10px;
   box-sizing: border-box;
   background: #fff;
+  margin-top: 30rpx;
 }
-/*右侧栏list的item*/
-.nav_right .nav_right_items{
-  /*浮动向左*/
-  float: left;
-  /*每个item设置宽度是33.33%*/
-  width: 50%;
-  height: 80px;
-  text-align: center;
+
+/* 对里边的卡片页面的设置显示 */
+/* .nav_right .crad{
+  margin: 50rpx;
+} */
+.projectTitle{
+  font-size: 32rpx;
+  color: rgb(95, 122, 195);
 }
-.nav_right .nav_right_items image{
-  /*被图片设置宽高*/
-  width: 50px;
-  height: 30px;
-}
-.nav_right .nav_right_items text{
-  /*给text设成块级元素*/
-  display: block;
-  margin-top: 28px;
-  font-size: 20px;
-  /*设置文字溢出部分为...*/
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.displayFloatingWindow{
+margin: 5%;
+border-radius: 20rpx;
+padding: 6rpx;
+width: 90%;
+ height: 300rpx;
+ margin-bottom: 50%;
+background-color: rgb(255, 255, 255);
 }

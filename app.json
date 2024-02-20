@@ -3,7 +3,11 @@
     "pages/me/index",
     "pages/index/index",
     "pages/functions/index",
-    "pages/homePage/index"
+    "pages/homePage/index",
+    "pages/teamMembers/index",
+    "pages/setUp/index",
+    "pages/awardPresentation/index",
+    "pages/learnMore/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,8 +19,8 @@
     "list": [{
         "pagePath": "pages/functions/index",
         "text": "领域圈",
-        "iconPath": "/Image/首页.png",
-        "selectedIconPath": "/Image/首页 (1).png" 
+        "iconPath": "/Image/领域.png",
+        "selectedIconPath": "/Image/飞机.png" 
     },
 
     {
@@ -28,7 +32,7 @@
     {
         "pagePath": "pages/me/index",
         "text": "我的",
-        "iconPath": "/Image/我的.png",
+        "iconPath": "/Image/拼图.png",
         "selectedIconPath": "/Image/飞机.png"
     }
 ]},

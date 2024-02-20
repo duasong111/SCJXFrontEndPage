@@ -1,0 +1,15 @@
+<!-- <l-notice-bar show="{{true}}"  type="roll" speed="2000">我是通告栏</l-notice-bar> -->
+<view class="container">
+
+  <view class="carouselChart">
+    <swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}" interval="20000" indicator-color="#afafb0" indicator-active-color="#ffffff">
+      <swiper-item wx:for="{{imagsult}}" wx:key="index" style="width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx; justify-content:center;align-items:center;display: flex;">
+        <image mode="widthFix" src="https://www.bing.com/{{item.url}}" />
+        <view class="content">{{item.copyright}}</view>
+      </swiper-item>
+
+    </swiper>
+    
+  </view>
+  
+</view>

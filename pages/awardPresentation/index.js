@@ -25,7 +25,7 @@ Page({
    */
   onLoad(options) {
     // 获取比赛通知
-    this.getGameNotices()
+    // this.getGameNotices()
     //发送请求获取壁纸
     this.getimages();
   },
@@ -86,62 +86,10 @@ Page({
 
 
 
-  //获取当前滑块的index
-  bindchange: function (e) {
-    const that = this;
-    that.setData({
-      currentData: e.detail.current
-    })
-  },
-  //点击切换，滑块index赋值
-  checkCurrent: function (e) {
-    const that = this;
 
-    if (that.data.currentData === e.target.dataset.current) {
-      return false;
-    } else {
 
-      that.setData({
-        currentData: e.target.dataset.current
-      })
-    }
-  },
 
-  // 人员详情的页面的跳转
-  personnelDetails: function () {
-    wx.navigateTo({
-      url: '/pages/teamMembers/index'
-    })
-  },
-
-  //展示获奖展示页面
-  awardPresentation: function () {
-  
-    wx.navigateTo({
-      url: '/pages/awardPresentation/index',
-    })
-  },
-
-  //获取比赛通知
-  getGameNotices: function () {
-
-    var that = this
-    wx.request({
-      url: 'http://127.0.0.1:8000/conf/get-notice/',
-      method: 'GET',
-      data: {},
-      header: {
-        'Accept': 'application/json'
-      },
-      success: function (res) {
-        // console.log("获取成功", res.data)
-        that.setData({
-          getCompetitionNotifications: res.data.data
-        })
-      }
-    })
-  },
-
+ 
 
   /**
    * 生命周期函数--监听页面初次渲染完成

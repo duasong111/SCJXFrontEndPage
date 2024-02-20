@@ -1,3 +1,6 @@
+<view class="searchbar">
+  <l-search-bar placeholder="搜索项目名" shape="circle" show-cancel="{{trul}}" />
+</view>
 <view class="container">
 
   <!--左侧栏-->
@@ -9,37 +12,29 @@
   <!--右侧栏-->
   <view class="nav_right">
     <view wx:if="{{navRightItems[curIndex][0]}}">
-      <block wx:for="{{navRightItems[curIndex]}}">
-        <view class="nav_right_items">
-          <view>
-              
-         
-            <block wx:if="{{item.logo}}">
-              <image src="{{item.logo}}"></image>
-            </block>
-            <block wx:else>
-              <!-- 这里展示的是备用图片哈 -->
-              <!-- <image src="http://temp.im/50x30"></image> -->
-            </block>
+      <view class="crad" data-index="{{index}}" wx:for="{{navRightItems[curIndex]}}">
+        <l-card bindtap="getDetail" type="primary" plaintext="{{true}}" title="">
+          <view class="projectTitle"> 项目名称: {{item.name}}</view>
+          <view class="content">
+    
+            {{item.description}} {{item.time}}
           </view>
-          <!--如果有文字，就用文字；无文字就用其他-->
-          <view wx:if="{{item.name}}">
-            <text>{{item.name}}</text>
+          <!-- 展示弹出层 -->
+    
+        </l-card>
+       <!-- <l-popup show="{{showPoP}}" content-align="bottom">
+          <view class="displayFloatingWindow">
+          <view class="projecName"> 项目名:{{item.name}}</view>
+          <view class="projecLeader">项目负责人:{{item.head}}</view>
+          <view class="projectTeam" wx:for="{{item.team_composition}}">
+          <view class="showName">人员组成:{{item.name}}  人员分工:{{item.role}}  </view>
+          <view class="showRole"></view>
           </view>
-          <view wx:else>
-            <text>{{item.memo}}</text>
           </view>
-          <!-- 展示开发人员的信息 -->
-          <!-- <view>
-            <block wx:for="{{item.team_composition}}" wx:key="index">
-              <view>: {{item.name}}</view>
-              <view>: {{item.role}}</view>
-            </block>
-          </view> -->
-        </view>
-      </block>
+        </l-popup>  -->
+      </view>
     </view>
-    <!--如果无数据，则显示数据-->
-    <view wx:else>暂无数据</view>
-  </view>
-</view>
+    <view wx:else>该领域可能还没有项目供于对外展示哦</view>
+    </view>
+    
+    </view>

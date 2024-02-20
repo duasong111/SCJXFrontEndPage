@@ -3,7 +3,8 @@
   
   "usingComponents": {
     "l-button":"/miniprogram_npm/lin-ui/button/index",
-    "l-card":"/miniprogram_npm/lin-ui/card/index"
+    "l-card":"/miniprogram_npm/lin-ui/card/index",
+    "l-popup":"../../miniprogram_npm/lin-ui/popup/index"
    
   }
 }
