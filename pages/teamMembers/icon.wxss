@@ -1,0 +1,40 @@
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 4383870 */
+  src: url('//at.alicdn.com/t/c/font_4383870_qns10tha8eq.woff2?t=1708414738370') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4383870_qns10tha8eq.woff?t=1708414738370') format('woff'),
+       url('//at.alicdn.com/t/c/font_4383870_qns10tha8eq.ttf?t=1708414738370') format('truetype'),
+       url('//at.alicdn.com/t/c/font_4383870_qns10tha8eq.svg?t=1708414738370#iconfont') format('svg');
+}
+.iconfont{
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.icon-head:before {
+  content: "\e623;";
+  font-size: 60rpx;
+  /* color: aqua; */
+}
+.icon-banji::before{
+  font-size: 35rpx;
+  content: "\e628";
+  color: #6f9cf0;
+}
+.icon-xingming:before {
+  font-size: 40rpx;
+  content: "\e629";
+  color: #e2934a;
+  margin-right: 10rpx;
+
+}
+.icon-zhuanye::before{
+  content: "\e627";
+  font-size: 40rpx;
+  color: #e2934a;
+}
+
+
+
+

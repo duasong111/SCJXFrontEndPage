@@ -1,0 +1,52 @@
+
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 4383870 */
+  src: url('//at.alicdn.com/t/c/font_4383870_c75td7sgqjt.woff2?t=1708415215621') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4383870_c75td7sgqjt.woff?t=1708415215621') format('woff'),
+       url('//at.alicdn.com/t/c/font_4383870_c75td7sgqjt.ttf?t=1708415215621') format('truetype'),
+       url('//at.alicdn.com/t/c/font_4383870_c75td7sgqjt.svg?t=1708415215621#iconfont') format('svg');
+}
+.iconfont{
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.icon-naozhong:before {
+  content: "\e605";
+  font-size: 60rpx;
+  /* color: aqua; */
+}
+.icon-fengche::before{
+  font-size: 70rpx;
+  content: "\e61d";
+  color: #f2c9ac;
+}
+.icon-shijian:before {
+  font-size: 30rpx;
+  content: "\e614";
+  margin-right: 8rpx;
+}
+.icon-monkey::before{
+  content: "\e619";
+  font-size: 85rpx;
+  color: #507ea4;
+}
+.icon-tuandui::before{
+  content: "\e62a";
+  font-size: 85rpx;
+  /* color: #507ea4; */
+  
+}
+.icon-zhanshiguize::before{
+  content: "\e622";
+  font-size: 60rpx;
+}
+.icon-head::before{
+  content: "\e623";
+  font-size: 60rpx;
+}
+
+
+

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/me/index",
+    "pages/index/index",
+    "pages/functions/index",
+    "pages/homePage/index",
+    "pages/teamMembers/index",
+    "pages/setUp/index",
+    "pages/awardPresentation/index",
+    "pages/setting/index",
+    "pages/learnMore/index"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/functions/index",
+        "text": "领域圈",
+        "iconPath": "/Image/领域.png",
+        "selectedIconPath": "/Image/飞机.png" 
+    },
+
+    {
+        "pagePath": "pages/homePage/index",
+        "text": "主页",
+        "iconPath": "/Image/坦克.png",
+        "selectedIconPath": "/Image/飞机.png"
+    },
+    {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "/Image/拼图.png",
+        "selectedIconPath": "/Image/飞机.png"
+    }
+]},
+
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

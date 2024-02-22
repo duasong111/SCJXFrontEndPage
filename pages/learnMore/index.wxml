@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="steps">
+
+    <!-- 自定义描述内容 -->
+    <l-steps reverse="{{true}}" direction="column" active-index="2">
+      <l-step title="版本1.0">
+        <view class="describe-container" slot="describe">
+          广大群众反映步骤条问题
+        </view>
+      </l-step>
+      <l-step title="版本1.2">
+        <view class="describe-container" slot="describe">
+          拾玖重构步骤条
+        </view>
+      </l-step>
+      <l-step title="版本2.1">
+        <view class="describe-container" slot="describe">
+        <view class="card-content">
+          基本的版本确定下来，但是后续版本更新未确定基本的版本确定下来，但是后续版本更新未确定
+        </view>
+         
+        </view>
+      </l-step>
+    </l-steps>
+  </view>
+
+</view>

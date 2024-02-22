@@ -1,0 +1,4 @@
+<!-- <l-notice-bar show="{{true}}"  type="roll" speed="2000">我是通告栏</l-notice-bar> -->
+<view class="container">
+<view class="iconfont icon-fenche"></view>
+</view>

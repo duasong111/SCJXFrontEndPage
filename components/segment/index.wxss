@@ -1,0 +1,34 @@
+.l-placement-bottom .l-tabs-header .l-tabs-item,
+.l-placement-top .l-tabs-header .l-tabs-item {
+    min-height: 100%
+}
+
+.l-tabs-horizontal .l-tabs-equal-width {
+  flex: 1;
+}
+.l-tabs-header .l-icon-active, .l-tabs-header .l-tabs-active {
+  color: rgb(108, 197, 233);
+}
+.l-tabs-header .l-tabs-item {
+  font-size: 50rpx;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rpx;
+}
+.l-tab-image-placement-top {
+  flex-direction: column;
+}
+.l-tabs-item {
+  position: relative;
+}
+
+/* view {
+  display: block;
+}
+
+* {
+  margin: 0;
+} */
