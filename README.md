@@ -10,7 +10,8 @@
 
 3. 注意:一定要去将后台数据跑起来，要不然项目显示会存在问题，页面会存在严重的缺失
 
-4. https://github.com/duasong111/SCJXFrontEndPage/Image/主页面显示.png
+4. https://github.com/duasong111/SCJXFrontEndPage/Image
+/主页面显示.png
 
    
 
